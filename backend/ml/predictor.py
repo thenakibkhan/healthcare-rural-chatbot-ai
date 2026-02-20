@@ -15,9 +15,14 @@ class DiseasePredictor:
         self.precautions = None
         self.severity = None
         self.symptom_aliases = None
-        self.load_artifacts()
+        self._loaded = False
+        
+    def _ensure_loaded(self):
+        if not self._loaded:
+            self.load_artifacts()
 
     def load_artifacts(self):
+        self._loaded = True
         if not os.path.exists(self.model_path):
             raise FileNotFoundError(f"Model file not found at {self.model_path}")
             
@@ -41,6 +46,7 @@ class DiseasePredictor:
             self.symptom_aliases = None
 
     def check_symptom(self, user_input, lang='en'):
+        self._ensure_loaded()
         if not user_input or self.all_symptoms is None:
             return None, 0
         text_to_check = user_input
@@ -55,6 +61,7 @@ class DiseasePredictor:
         return match, score
 
     def predict(self, symptoms_list):
+        self._ensure_loaded()
         if self.all_symptoms is None:
             return None
 
