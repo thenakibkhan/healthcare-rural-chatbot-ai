@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+
+{% block title %}Health Assistant{% endblock %}
+
+{% block content %}
+<div class="h-[calc(100vh-4rem)] flex overflow-hidden">
+    <script>
+        const CURRENT_USER_NAME = "{{ current_user.name }}";
+    </script>
+    <!-- Chat Sidebar (History Menu) -->
+    <div class="hidden md:flex w-64 flex-col bg-white dark:bg-slate-800 border-r border-gray-200 dark:border-slate-700">
+        <div class="p-4 border-b border-gray-200 dark:border-slate-700 flex justify-between items-center">
+            <h3 class="font-semibold text-gray-700 dark:text-gray-200">Chat History</h3>
+        </div>
+        <div class="flex-1 overflow-y-auto p-2 space-y-2" id="session-list">
+            <!-- Sessions will be loaded here by main.js -->
+        </div>
+    </div>
+
+    <!-- Main Chat Area -->
+    <div class="flex-1 flex flex-col max-w-4xl mx-auto w-full">
+        <!-- Chat Header -->
+        <div
+            class="bg-white dark:bg-slate-800 rounded-t-2xl p-4 shadow-sm border-b border-gray-100 dark:border-slate-700 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900/30 rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-robot text-emerald-600 dark:text-emerald-400"></i>
+                </div>
+                <div>
+                    <h2 class="font-bold text-gray-900 dark:text-white">Dr. AI Assistant</h2>
+                    <div class="flex items-center gap-1 text-xs text-green-500">
+                        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> Online
+                    </div>
+                </div>
+            </div>
+            <!-- Language Selector -->
+            <div class="relative ml-auto mr-4">
+                <button id="lang-btn" onclick="document.getElementById('lang-menu').classList.toggle('hidden')"
+                    class="flex items-center gap-1 text-gray-500 hover:text-primary focus:outline-none bg-gray-100 dark:bg-slate-700 px-3 py-1 rounded-full text-sm transition">
+                    <i class="fa-solid fa-language text-lg"></i> <span id="current-lang">EN</span>
+                </button>
+                <div id="lang-menu"
+                    class="absolute right-0 mt-2 w-32 bg-white dark:bg-slate-800 shadow-xl rounded-lg py-2 hidden border border-gray-100 dark:border-slate-700 z-50">
+                    <button
+                        class="block w-full text-left px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-slate-700 text-gray-700 dark:text-gray-200"
+                        onclick="changeLang('en'); document.getElementById('lang-menu').classList.add('hidden')">English</button>
+                    <button
+                        class="block w-full text-left px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-slate-700 text-gray-700 dark:text-gray-200"
+                        onclick="changeLang('hi'); document.getElementById('lang-menu').classList.add('hidden')">Hindi</button>
+                    <button
+                        class="block w-full text-left px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-slate-700 text-gray-700 dark:text-gray-200"
+                        onclick="changeLang('ta'); document.getElementById('lang-menu').classList.add('hidden')">Tamil</button>
+                </div>
+            </div>
+
+            <button onclick="resetChat()" class="text-gray-500 hover:text-red-500 transition" title="Restart Chat">
+                <i class="fa-solid fa-rotate-right"></i>
+            </button>
+        </div>
+
+        <!-- Chat Messages Area -->
+        <div id="chat-messages" class="flex-1 bg-gray-50 dark:bg-slate-900 overflow-y-auto p-4 space-y-4">
+            <!-- Messages will be injected here by JS -->
+            <div class="flex justify-start">
+                <div class="bg-white dark:bg-slate-800 p-4 rounded-2xl rounded-tl-none shadow-sm max-w-[80%]">
+                    <p class="text-gray-800 dark:text-gray-200">Hello! I'm your health assistant using <span
+                            id="model-name-display" class="font-semibold text-primary">Decision Tree</span>. Please
+                        describe
+                        your symptoms (e.g., fever, headache, cough).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Indicator (Hidden by default) -->
+        <div id="typing-indicator" class="hidden px-4 py-2 bg-gray-50 dark:bg-slate-900">
+            <div class="flex items-center gap-1 text-gray-400 text-sm">
+                <span>AI is thinking</span>
+                <span class="animate-bounce">.</span>
+                <span class="animate-bounce delay-100">.</span>
+                <span class="animate-bounce delay-200">.</span>
+            </div>
+        </div>
+
+        <!-- Info Tab -->
+        <div id="info-tab"
+            class="px-4 py-2 bg-white dark:bg-slate-800 border-t border-gray-100 dark:border-slate-700 flex justify-center">
+            <div id="info-tab-content">
+                <!-- Content Injected via JS -->
+                <span class="text-xs text-gray-400">Loading system info...</span>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div
+            class="bg-white dark:bg-slate-800 p-4 rounded-b-2xl shadow-lg border-t border-gray-100 dark:border-slate-700">
+            <form id="chat-form" onsubmit="api.handleParams(event)" class="flex gap-2">
+                <input type="text" id="symptom-input" list="symptoms-list" aria-label="Describe your symptoms"
+                    class="flex-1 rounded-full border border-gray-300 dark:border-slate-600 px-4 py-2 focus:outline-none focus:border-primary dark:bg-slate-700 dark:text-white"
+                    placeholder="Type your symptoms here..." autocomplete="off">
+                <datalist id="symptoms-list"></datalist>
+                <button type="submit" aria-label="Send message"
+                    class="bg-primary hover:bg-emerald-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition shadow-lg shadow-emerald-500/30">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Report Modal (Hidden) -->
+    <div id="report-modal"
+        class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm">
+        <div
+            class="bg-white dark:bg-slate-800 rounded-2xl max-w-lg w-full p-6 shadow-2xl transform transition-all scale-100">
+            <div class="text-center mb-6">
+                <div
+                    class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fa-solid fa-file-medical text-3xl text-blue-600 dark:text-blue-400"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Diagnosis Complete</h3>
+                <p class="text-gray-500 dark:text-gray-400 mt-2">Your health report is ready.</p>
+            </div>
+
+            <div class="bg-gray-50 dark:bg-slate-700/50 rounded-xl p-4 mb-6">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-gray-600 dark:text-gray-300">Predicted Disease</span>
+                    <span id="modal-disease" class="font-bold text-gray-900 dark:text-white">Viral Fever</span>
+                </div>
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-gray-600 dark:text-gray-300">Confidence</span>
+                    <span id="modal-confidence" class="font-bold text-emerald-500">95%</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-gray-600 dark:text-gray-300">Severity</span>
+                    <span id="modal-severity"
+                        class="px-2 py-1 rounded text-xs font-semibold bg-green-100 text-green-800">Low</span>
+                </div>
+            </div>
+
+            <div class="flex gap-3">
+                <button onclick="frontend.closeModal()"
+                    class="flex-1 px-4 py-2 border border-gray-300 dark:border-slate-600 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-700 transition">
+                    Close
+                </button>
+                <button onclick="frontend.downloadReport()"
+                    class="flex-1 px-4 py-2 bg-primary hover:bg-emerald-600 text-white rounded-lg shadow-lg shadow-emerald-500/30 transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-download"></i> Download PDF
+                </button>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+
+    {% block footer %}{% endblock %}

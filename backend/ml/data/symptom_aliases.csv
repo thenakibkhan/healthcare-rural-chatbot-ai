@@ -1,0 +1,82 @@
+﻿alias,symptom,language
+fever,fever,en
+high fever,fever,en
+बुखार,fever,hi
+तेज बुखार,fever,hi
+காய்ச்சல்,fever,ta
+அதிக காய்ச்சல்,fever,ta
+
+headache,headache,en
+head pain,headache,en
+सिरदर्द,headache,hi
+தலைவலி,headache,ta
+
+cold,cold,en
+runny nose,cold,en
+सर्दी,cold,hi
+மூக்கு சளி,cold,ta
+
+cough,cough,en
+persistent cough,cough,en
+खांसी,cough,hi
+இருமல்,cough,ta
+
+chills,chills,en
+shivering,chills,en
+ठंड लगना,chills,hi
+சிலிர்ப்பு,chills,ta
+
+body pain,body pain,en
+muscle pain,body pain,en
+शरीर दर्द,body pain,hi
+உடல் வலி,body pain,ta
+
+vomiting,vomiting,en
+nausea,vomiting,en
+उल्टी,vomiting,hi
+வாந்தி,vomiting,ta
+
+diarrhea,diarrhea,en
+loose motion,diarrhea,en
+दस्त,diarrhea,hi
+வயிற்றுப்போக்கு,diarrhea,ta
+
+stomach pain,stomach pain,en
+abdominal pain,stomach pain,en
+पेट दर्द,stomach pain,hi
+வயிற்று வலி,stomach pain,ta
+
+itching,itching,en
+skin itching,itching,en
+खुजली,itching,hi
+அரிப்பு,itching,ta
+
+rashes,rashes,en
+skin rash,rashes,en
+चकत्ते,rashes,hi
+தோல் அரிப்பு,rashes,ta
+
+dizziness,dizziness,en
+light headed,dizziness,en
+चक्कर आना,dizziness,hi
+மயக்கம்,dizziness,ta
+
+burning urination,burning urination,en
+painful urination,burning urination,en
+पेशाब में जलन,burning urination,hi
+சிறுநீர் எரிச்சல்,burning urination,ta
+
+frequent urination,frequent urination,en
+urinating often,frequent urination,en
+बार बार पेशाब आना,frequent urination,hi
+அடிக்கடி சிறுநீர்,frequent urination,ta
+
+thirst,thirst,en
+excessive thirst,thirst,en
+प्यास लगना,thirst,hi
+அதிக தாகம்,thirst,ta
+
+dry mouth,dry mouth,en
+mouth dryness,dry mouth,en
+मुंह सूखना,dry mouth,hi
+வாய் உலர்வு,dry mouth,ta

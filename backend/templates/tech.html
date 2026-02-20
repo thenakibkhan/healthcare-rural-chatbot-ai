@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block title %}Technologies Used{% endblock %}
+
+{% block content %}
+<div class="bg-white dark:bg-slate-900 py-20 min-h-screen">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+                Built With Modern Tech
+            </h2>
+            <p class="mt-4 text-xl text-gray-500 dark:text-gray-400">
+                A robust stack powering intelligent healthcare predictions.
+            </p>
+        </div>
+
+        <!-- Tech Categories -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Backend -->
+            <div
+                class="bg-gray-50 dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 hover:shadow-xl transition duration-300">
+                <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-server text-2xl text-blue-600 dark:text-blue-400"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Backend Core</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">
+                        <i class="fa-brands fa-python text-lg text-yellow-500"></i> Python 3.10+
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">
+                        <i class="fa-solid fa-flask text-lg text-gray-500"></i> Flask Framework
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">
+                        <i class="fa-solid fa-database text-lg text-emerald-500"></i> SQLite / SQLAlchemy
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">
+                        <i class="fa-solid fa-shield-halved text-lg text-red-500"></i> Flask-Login Auth
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Machine Learning -->
+            <div
+                class="bg-gray-50 dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 hover:shadow-xl transition duration-300 transform md:-translate-y-4 border-t-4 border-t-primary">
+                <div
+                    class="w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-brain text-2xl text-emerald-600 dark:text-emerald-400"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">AI & ML Engine</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">
+                        <i class="fa-solid fa-microchip text-lg text-orange-500"></i> Scikit-Learn
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">
+                        <i class="fa-solid fa-tree text-lg text-green-600"></i> Random Forest & DT
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">
+                        <i class="fa-solid fa-calculator text-lg text-purple-500"></i> NumPy & Pandas
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">
+                        <i class="fa-solid fa-language text-lg text-blue-400"></i> Deep Translator (Google)
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">
+                        <i class="fa-solid fa-magnifying-glass text-lg text-gray-600"></i> FuzzyWuzzy Matching
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Frontend -->
+            <div
+                class="bg-gray-50 dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 hover:shadow-xl transition duration-300">
+                <div
+                    class="w-14 h-14 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-laptop-code text-2xl text-purple-600 dark:text-purple-400"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Frontend UI</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">
+                        <i class="fa-brands fa-html5 text-lg text-orange-600"></i> HTML5 / Jinja2
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">
+                        <i class="fa-brands fa-css3-alt text-lg text-blue-500"></i> Tailwind CSS
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">
+                        <i class="fa-brands fa-js text-lg text-yellow-400"></i> Vanilla JavaScript
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">
+                        <i class="fa-solid fa-font-awesome text-lg text-blue-300"></i> FontAwesome 6
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-16 text-center">
+            <a href="/"
+                class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-emerald-600 md:py-4 md:text-lg md:px-10 shadow-lg shadow-emerald-500/30 transition duration-300">
+                Experience It Live
+                <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

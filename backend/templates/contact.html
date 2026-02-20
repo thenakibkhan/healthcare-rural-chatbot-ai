@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<div class="bg-white dark:bg-slate-900 py-20 min-h-screen">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+                Get in Touch
+            </h2>
+            <p class="mt-4 text-xl text-gray-500 dark:text-gray-400">
+                Have questions or feedback? We'd love to hear from you.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+
+            <!-- Contact Info -->
+            <div
+                class="bg-gray-50 dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 h-fit">
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Contact Information</h3>
+
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-envelope text-emerald-600 dark:text-emerald-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium text-gray-900 dark:text-white">Email Us</h4>
+                            <p class="text-gray-500 dark:text-gray-400">support@ruralhealth.ai</p>
+                            <p class="text-gray-500 dark:text-gray-400">partnerships@ruralhealth.ai</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-location-dot text-blue-600 dark:text-blue-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium text-gray-900 dark:text-white">Location</h4>
+                            <p class="text-gray-500 dark:text-gray-400">Innovation Hub, Tech Park</p>
+                            <p class="text-gray-500 dark:text-gray-400">Bangalore, India 560001</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-clock text-purple-600 dark:text-purple-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium text-gray-900 dark:text-white">Working Hours</h4>
+                            <p class="text-gray-500 dark:text-gray-400">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-8 border-t border-gray-200 dark:border-slate-600">
+                    <h4 class="text-lg font-medium text-gray-900 dark:text-white mb-4">Follow Us</h4>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-white dark:bg-slate-700 rounded-full flex items-center justify-center text-gray-500 hover:text-blue-600 hover:shadow-md transition">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white dark:bg-slate-700 rounded-full flex items-center justify-center text-gray-500 hover:text-blue-800 hover:shadow-md transition">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white dark:bg-slate-700 rounded-full flex items-center justify-center text-gray-500 hover:text-pink-600 hover:shadow-md transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white dark:bg-slate-700 rounded-full flex items-center justify-center text-gray-500 hover:text-gray-900 hover:shadow-md transition">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div
+                class="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8 border border-gray-100 dark:border-slate-700">
+                <form onsubmit="event.preventDefault(); alert('Message sent! (Demo only)');" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Full
+                            Name</label>
+                        <input type="text" id="name"
+                            class="mt-1 block w-full rounded-lg border-gray-300 dark:border-slate-600 bg-gray-50 dark:bg-slate-700 text-gray-900 dark:text-white shadow-sm focus:border-primary focus:ring-primary py-2 px-3"
+                            placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email
+                            Address</label>
+                        <input type="email" id="email"
+                            class="mt-1 block w-full rounded-lg border-gray-300 dark:border-slate-600 bg-gray-50 dark:bg-slate-700 text-gray-900 dark:text-white shadow-sm focus:border-primary focus:ring-primary py-2 px-3"
+                            placeholder="you@example.com">
+                    </div>
+                    <div>
+                        <label for="subject"
+                            class="block text-sm font-medium text-gray-700 dark:text-gray-300">Subject</label>
+                        <select id="subject"
+                            class="mt-1 block w-full rounded-lg border-gray-300 dark:border-slate-600 bg-gray-50 dark:bg-slate-700 text-gray-900 dark:text-white shadow-sm focus:border-primary focus:ring-primary py-2 px-3">
+                            <option>General Inquiry</option>
+                            <option>Technical Support</option>
+                            <option>Partnership</option>
+                            <option>Feedback</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message"
+                            class="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
+                        <textarea id="message" rows="4"
+                            class="mt-1 block w-full rounded-lg border-gray-300 dark:border-slate-600 bg-gray-50 dark:bg-slate-700 text-gray-900 dark:text-white shadow-sm focus:border-primary focus:ring-primary py-2 px-3"
+                            placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-primary hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 transition shadow-lg shadow-emerald-500/30">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

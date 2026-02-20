@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}Our Team{% endblock %}
+
+{% block content %}
+<div class="bg-white dark:bg-slate-900 py-20 min-h-screen">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+                Meet the Team
+            </h2>
+            <p class="mt-4 text-xl text-gray-500 dark:text-gray-400">
+                Passionate individuals driving healthcare innovation.
+            </p>
+        </div>
+
+        <!-- Mentor -->
+        <div class="flex justify-center mb-16">
+            <div
+                class="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8 max-w-sm w-full text-center border-t-4 border-emerald-500 transform hover:-translate-y-2 transition duration-300">
+                <div class="w-32 h-32 mx-auto mb-6 relative">
+                    <div class="absolute inset-0 bg-emerald-100 dark:bg-emerald-900/30 rounded-full animate-pulse">
+                    </div>
+                    <!-- User needs to upload mentor.jpg -->
+                    <img src="{{ url_for('static', filename='images/team/mentor.jpeg') }}"
+                        onerror="this.src='https://ui-avatars.com/api/?name=TKP+RajaGopal&background=10b981&color=fff&size=256'"
+                        alt="Mr. TKP RajaGopal"
+                        class="w-full h-full rounded-full object-cover relative z-10 border-4 border-white dark:border-slate-800 shadow-md">
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-1">Mr. TKP RajaGopal</h3>
+                <p class="text-emerald-600 dark:text-emerald-400 font-medium mb-4">Associate Professor</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                    Hindusthan College of Engineering and Technology, Coimbatore
+                </p>
+            </div>
+        </div>
+
+        <!-- Team Members -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Nakib -->
+            <div
+                class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 text-center border border-gray-100 dark:border-slate-700 hover:shadow-2xl transition duration-300 flex flex-col items-center group">
+                <div
+                    class="w-24 h-24 rounded-full mb-4 shadow-md overflow-hidden border-2 border-blue-100 dark:border-blue-900 group-hover:border-blue-500 transition">
+                    <img src="{{ url_for('static', filename='images/team/member 1.jpeg') }}"
+                        onerror="this.src='https://ui-avatars.com/api/?name=Nakib+Khan&background=3b82f6&color=fff&size=128'"
+                        alt="Nakib khan S" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Nakib khan S</h3>
+                <div class="h-1 w-10 bg-blue-500 rounded-full my-2"></div>
+                <p class="text-gray-500 dark:text-gray-400 text-sm">ML Engineer</p>
+            </div>
+
+            <!-- Rakkesh -->
+            <div
+                class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 text-center border border-gray-100 dark:border-slate-700 hover:shadow-2xl transition duration-300 flex flex-col items-center group">
+                <div
+                    class="w-24 h-24 rounded-full mb-4 shadow-md overflow-hidden border-2 border-violet-100 dark:border-violet-900 group-hover:border-violet-500 transition">
+                    <img src="{{ url_for('static', filename='images/team/member 2.jpeg') }}"
+                        onerror="this.src='https://ui-avatars.com/api/?name=Rakkesh+M&background=8b5cf6&color=fff&size=128'"
+                        alt="Rakkesh M" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Rakkesh M</h3>
+                <div class="h-1 w-10 bg-violet-500 rounded-full my-2"></div>
+                <p class="text-gray-500 dark:text-gray-400 text-sm">Backend Developer</p>
+            </div>
+
+            <!-- Naga -->
+            <div
+                class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 text-center border border-gray-100 dark:border-slate-700 hover:shadow-2xl transition duration-300 flex flex-col items-center group">
+                <div
+                    class="w-24 h-24 rounded-full mb-4 shadow-md overflow-hidden border-2 border-amber-100 dark:border-amber-900 group-hover:border-amber-500 transition">
+                    <img src="{{ url_for('static', filename='images/team/member 3.jpeg') }}"
+                        onerror="this.src='https://ui-avatars.com/api/?name=Naga+Karthiga&background=f59e0b&color=fff&size=128'"
+                        alt="Naga Karthiga N" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Naga Karthiga N</h3>
+                <div class="h-1 w-10 bg-amber-500 rounded-full my-2"></div>
+                <p class="text-gray-500 dark:text-gray-400 text-sm">Frontend Developer</p>
+            </div>
+
+            <!-- Santosh -->
+            <div
+                class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 text-center border border-gray-100 dark:border-slate-700 hover:shadow-2xl transition duration-300 flex flex-col items-center group">
+                <div
+                    class="w-24 h-24 rounded-full mb-4 shadow-md overflow-hidden border-2 border-pink-100 dark:border-pink-900 group-hover:border-pink-500 transition">
+                    <img src="{{ url_for('static', filename='images/team/member 4.jpeg') }}"
+                        onerror="this.src='https://ui-avatars.com/api/?name=Santosh+M&background=ec4899&color=fff&size=128'"
+                        alt="Santosh M" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Santosh M</h3>
+                <div class="h-1 w-10 bg-pink-500 rounded-full my-2"></div>
+                <p class="text-gray-500 dark:text-gray-400 text-sm">UI/UX Designer</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

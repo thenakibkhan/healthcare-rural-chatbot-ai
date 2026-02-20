@@ -1,0 +1,60 @@
+﻿disease,symptom
+viral fever,fever
+viral fever,headache
+viral fever,chills
+
+common cold,cold
+common cold,sneezing
+common cold,runny nose
+
+flu,fever
+flu,cough
+flu,body pain
+
+dengue,high fever
+dengue,headache
+dengue,joint pain
+
+malaria,fever
+malaria,chills
+malaria,sweating
+
+typhoid,fever
+typhoid,weakness
+typhoid,loss of appetite
+
+allergy,itching
+allergy,sneezing
+allergy,rashes
+
+fungal infection,itching
+fungal infection,rashes
+fungal infection,skin rash
+
+food poisoning,vomiting
+food poisoning,diarrhea
+food poisoning,stomach pain
+
+gastritis,acid reflux
+gastritis,bloating
+gastritis,stomach pain
+
+migraine,headache
+migraine,nausea
+migraine,light sensitivity
+
+sinusitis,facial pain
+sinusitis,nasal congestion
+sinusitis,headache
+
+bronchitis,persistent cough
+bronchitis,fever
+bronchitis,body pain
+
+urinary tract infection,burning urination
+urinary tract infection,frequent urination
+urinary tract infection,lower abdominal pain
+
+dehydration,thirst
+dehydration,dry mouth
+dehydration,dizziness

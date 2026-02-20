@@ -1,0 +1,60 @@
+﻿disease,precaution_en,precaution_hi,precaution_ta
+viral fever,Take adequate rest,पर्याप्त आराम करें,போதுமான ஓய்வு எடுக்கவும்
+viral fever,Drink plenty of fluids,अधिक तरल पदार्थ पिएं,நிறைய திரவங்களை குடிக்கவும்
+viral fever,Use paracetamol if needed,आवश्यक हो तो पैरासिटामोल लें,தேவையெனில் பாராசிட்டமால் பயன்படுத்தவும்
+
+common cold,Keep yourself warm,अपने आप को गर्म रखें,உங்களை சூடாக வைத்துக் கொள்ளவும்
+common cold,Drink warm liquids,गर्म तरल पदार्थ पिएं,வெந்நீர் குடிக்கவும்
+common cold,Take proper rest,पर्याप्त आराम करें,போதுமான ஓய்வு எடுக்கவும்
+
+flu,Rest and hydrate,आराम करें और पानी पिएं,ஓய்வு எடுத்து திரவங்கள் குடிக்கவும்
+flu,Avoid cold exposure,ठंड से बचें,குளிரை தவிர்க்கவும்
+flu,Consult doctor if severe,गंभीर होने पर डॉक्टर से मिलें,கடுமையானால் மருத்துவரை அணுகவும்
+
+dengue,Drink ORS fluids,ओआरएस तरल पिएं,ORS திரவங்கள் குடிக்கவும்
+dengue,Avoid mosquito bites,मच्छरों से बचें,கொசு கடியிலிருந்து பாதுகாத்துக்கொள்ளவும்
+dengue,Regular medical monitoring,नियमित चिकित्सकीय निगरानी,மருத்துவ கண்காணிப்பில் இருக்கவும்
+
+malaria,Use mosquito nets,मच्छरदानी का उपयोग करें,கொசு வலை பயன்படுத்தவும்
+malaria,Complete full medication course,दवा का पूरा कोर्स लें,மருந்துகளை முழுமையாக எடுத்துக்கொள்ளவும்
+malaria,Keep surroundings clean,आसपास साफ रखें,சுற்றுப்புறத்தை சுத்தமாக வைத்துக்கொள்ளவும்
+
+typhoid,Drink boiled water,उबला हुआ पानी पिएं,காய்ச்சிய நீர் குடிக்கவும்
+typhoid,Eat light food,हल्का भोजन करें,எளிய உணவு சாப்பிடவும்
+typhoid,Complete antibiotics course,एंटीबायोटिक पूरा लें,மருந்துகளை முழுமையாக எடுத்துக்கொள்ளவும்
+
+allergy,Avoid allergens,एलर्जी कारणों से बचें,ஒவ்வாமை காரணிகளை தவிர்க்கவும்
+allergy,Use antihistamines,एंटीहिस्टामिन लें,எதிர்அலர்ஜி மருந்துகள் பயன்படுத்தவும்
+allergy,Keep skin clean,त्वचा साफ रखें,தோலை சுத்தமாக வைத்துக்கொள்ளவும்
+
+fungal infection,Keep affected area dry,संक्रमित स्थान सूखा रखें,பாதிக்கப்பட்ட பகுதியை உலர வைத்துக்கொள்ளவும்
+fungal infection,Apply antifungal cream,एंटीफंगल क्रीम लगाएं,எதிர்ப்பூஞ்சை கிரீம் பயன்படுத்தவும்
+fungal infection,Avoid tight clothing,टाइट कपड़े न पहनें,இறுக்கமான உடைகள் தவிர்க்கவும்
+
+food poisoning,Drink ORS,ओआरएस पिएं,ORS குடிக்கவும்
+food poisoning,Avoid oily food,तैलीय भोजन से बचें,எண்ணெய் உணவை தவிர்க்கவும்
+food poisoning,Maintain hygiene,स्वच्छता बनाए रखें,சுத்தத்தை பேணவும்
+
+gastritis,Avoid spicy food,मसालेदार भोजन से बचें,காரமான உணவை தவிர்க்கவும்
+gastritis,Eat small meals,थोड़ी मात्रा में खाएं,சிறு அளவில் உணவு சாப்பிடவும்
+gastritis,Reduce stress,तनाव कम करें,மனஅழுத்தத்தை குறைக்கவும்
+
+migraine,Rest in dark room,अंधेरे कमरे में आराम करें,இருண்ட அறையில் ஓய்வெடுக்கவும்
+migraine,Avoid loud noise,तेज आवाज से बचें,அதிக சத்தத்தை தவிர்க்கவும்
+migraine,Identify triggers,ट्रिगर पहचानें,தூண்டுதல்களை கண்டறியவும்
+
+sinusitis,Use steam inhalation,भाप लें,ஆவி பிடிக்கவும்
+sinusitis,Drink warm fluids,गर्म तरल पिएं,வெதுவெதுப்பான திரவங்கள் குடிக்கவும்
+sinusitis,Avoid dust exposure,धूल से बचें,தூசியை தவிர்க்கவும்
+
+bronchitis,Avoid smoking,धूम्रपान से बचें,புகை பிடிப்பதை தவிர்க்கவும்
+bronchitis,Take adequate rest,पर्याप्त आराम करें,போதுமான ஓய்வு எடுக்கவும்
+bronchitis,Drink warm liquids,गर्म तरल पिएं,வெந்நீர் குடிக்கவும்
+
+urinary tract infection,Drink plenty of water,अधिक पानी पिएं,அதிக நீர் குடிக்கவும்
+urinary tract infection,Maintain personal hygiene,स्वच्छता बनाए रखें,தனிப்பட்ட சுத்தத்தை பேணவும்
+urinary tract infection,Complete antibiotics,एंटीबायोटिक पूरा लें,மருந்துகளை முழுமையாக எடுத்துக்கொள்ளவும்
+
+dehydration,Drink water frequently,बार-बार पानी पिएं,அடிக்கடி நீர் குடிக்கவும்
+dehydration,Use ORS solution,ओआरएस लें,ORS பயன்படுத்தவும்
+dehydration,Avoid excessive heat,अधिक गर्मी से बचें,அதிக வெப்பத்தை தவிர்க்கவும்

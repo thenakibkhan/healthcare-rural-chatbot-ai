@@ -1,0 +1,16 @@
+﻿disease,severity
+viral fever,low
+common cold,low
+flu,medium
+dengue,high
+malaria,high
+typhoid,high
+allergy,low
+fungal infection,medium
+food poisoning,medium
+gastritis,medium
+migraine,medium
+sinusitis,medium
+bronchitis,high
+urinary tract infection,medium
+dehydration,low

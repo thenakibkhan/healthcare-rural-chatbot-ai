@@ -1,0 +1,15 @@
+flask
+flask-cors
+flask-login
+numpy
+pandas
+scikit-learn
+joblib
+fpdf
+deep-translator
+fuzzywuzzy
+python-Levenshtein
+authlib
+requests
+gunicorn
+werkzeug

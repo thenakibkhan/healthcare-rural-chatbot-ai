@@ -1,0 +1,30 @@
+﻿disease,description_en,description_hi,description_ta
+viral fever,"Viral fever is a common illness caused by viral infections. It usually presents with fever, headache, body pain, and fatigue. Most cases recover with rest and hydration. Medical attention is needed if symptoms persist.","वायरल फीवर एक सामान्य बीमारी है जो वायरल संक्रमण के कारण होती है। इसमें बुखार, सिरदर्द, शरीर में दर्द और थकान होती है। अधिकतर मामलों में आराम और तरल पदार्थ से ठीक हो जाता है।","வைரல் காய்ச்சல் என்பது வைரஸ் தொற்றால் ஏற்படும் பொதுவான நோயாகும். காய்ச்சல், தலைவலி, உடல்வலி மற்றும் சோர்வு காணப்படும். பெரும்பாலானவர்கள் ஓய்வு மற்றும் திரவங்களுடன் குணமடைகிறார்கள்."
+
+common cold,"Common cold is a mild viral infection affecting the nose and throat. Symptoms include runny nose, sneezing, cough, and sore throat. It usually resolves within a few days.","सामान्य सर्दी एक हल्का वायरल संक्रमण है जो नाक और गले को प्रभावित करता है। इसमें नाक बहना, छींक, खांसी और गले में खराश होती है।","சாதாரண சளி என்பது மூக்கு மற்றும் தொண்டையை பாதிக்கும் லேசான வைரஸ் தொற்றாகும். மூக்கு ஒழுகுதல், தும்மல் மற்றும் இருமல் காணப்படும்."
+
+flu,"Flu is a contagious respiratory illness caused by influenza viruses. It causes high fever, cough, body aches, and extreme tiredness. Elderly people may face complications.","फ्लू एक संक्रामक श्वसन रोग है जो इन्फ्लुएंजा वायरस से होता है। इसमें तेज बुखार, खांसी और शरीर दर्द होता है।","ஃப்ளூ என்பது இன்ஃப்ளூயன்சா வைரஸால் ஏற்படும் தொற்றுநோய். அதிக காய்ச்சல் மற்றும் உடல்வலி காணப்படும்."
+
+dengue,"Dengue is a mosquito-borne viral disease causing high fever, severe headache, joint pain, and weakness. It may lead to complications if untreated.","डेंगू मच्छर से फैलने वाली वायरल बीमारी है। इसमें तेज बुखार, सिरदर्द और जोड़ों में दर्द होता है।","டெங்கு என்பது கொசுக்களால் பரவும் வைரஸ் நோய். அதிக காய்ச்சல் மற்றும் மூட்டு வலி ஏற்படும்."
+
+malaria,"Malaria is a serious disease transmitted by mosquito bites. It causes fever, chills, sweating, and weakness. Prompt treatment is essential.","मलेरिया मच्छरों के काटने से होने वाली गंभीर बीमारी है। इसमें बुखार और ठंड लगती है।","மலேரியா என்பது கொசு கடியால் ஏற்படும் தீவிர நோய். காய்ச்சல் மற்றும் நடுக்கம் ஏற்படும்."
+
+typhoid,"Typhoid is a bacterial infection spread through contaminated food and water. It causes prolonged fever, weakness, and digestive issues.","टाइफाइड दूषित भोजन और पानी से होने वाला बैक्टीरियल संक्रमण है।","டைபாய்டு என்பது மாசடைந்த உணவு மற்றும் நீரால் ஏற்படும் தொற்று."
+
+allergy,"Allergy is an immune reaction to substances like dust, pollen, or food. Symptoms include sneezing, itching, rashes, and watery eyes.","एलर्जी शरीर की प्रतिरक्षा प्रतिक्रिया है जो धूल या पराग से होती है।","அலர்ஜி என்பது தூசி அல்லது உணவுகளால் ஏற்படும் எதிர்வினை."
+
+fungal infection,"Fungal infection affects skin, nails, or scalp causing itching and rashes. It spreads in warm and moist conditions.","फंगल संक्रमण त्वचा या नाखून को प्रभावित करता है।","பூஞ்சை தொற்று தோலை பாதித்து அரிப்பு ஏற்படுத்தும்."
+
+food poisoning,"Food poisoning occurs due to contaminated food or water. It causes vomiting, diarrhea, and stomach pain.","फूड पॉइज़निंग दूषित भोजन से होती है।","உணவு விஷமயக்கம் வாந்தி மற்றும் வயிற்றுப்போக்கு ஏற்படுத்தும்."
+
+gastritis,"Gastritis is inflammation of the stomach lining. It causes acidity, bloating, and stomach pain.","गैस्ट्राइटिस पेट की परत की सूजन है।","காஸ்ட்ரைட்டிஸ் வயிற்று உள்தோல் அழற்சி."
+
+migraine,"Migraine is a neurological condition causing intense headaches. It may be accompanied by nausea and light sensitivity.","माइग्रेन एक गंभीर सिरदर्द की समस्या है।","மைக்ரேன் கடுமையான தலைவலியை ஏற்படுத்தும்."
+
+sinusitis,"Sinusitis is inflammation of sinus cavities. It causes facial pain, nasal congestion, and headache.","साइनसाइटिस साइनस की सूजन है।","சைனஸிடிஸ் முகவலி மற்றும் மூக்கு அடைப்பு ஏற்படுத்தும்."
+
+bronchitis,"Bronchitis is inflammation of bronchial tubes causing cough, fever, and breathing difficulty.","ब्रोंकाइटिस फेफड़ों की नलिकाओं की सूजन है।","பிராங்கைட்டிஸ் நுரையீரல் குழாய்களில் அழற்சி."
+
+urinary tract infection,"UTI is an infection of the urinary system causing burning urination and frequent urination.","यूटीआई मूत्र मार्ग का संक्रमण है।","சிறுநீரக பாதை தொற்று எரிச்சல் தரும்."
+
+dehydration,"Dehydration occurs when the body loses more fluids than intake. It causes thirst, dizziness, and dry mouth.","डिहाइड्रेशन शरीर में पानी की कमी से होता है।","நீரிழப்பு அதிக தாகம் மற்றும் மயக்கம் தரும்."
