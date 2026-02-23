@@ -117,7 +117,13 @@ class DiseasePredictor:
                 
                 # Apply penalty to the actual confidence shown to the user
                 conf = max(0.0, conf - penalty)
+                
+                # Selection score: Favor robust models over simple ones
                 score = conf
+                if 'Random Forest' in name or 'RandomForest' in name:
+                    score += 15.0 # Big bonus to make RF the preferred winner
+                elif 'SVM' in name or 'SVC' in name:
+                    score += 10.0 # Bonus to SVM
                 
                 # Report confidence in comparison
                 comparison.append({
