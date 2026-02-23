@@ -88,7 +88,7 @@ def train_and_evaluate(X, y):
     models = {
         "Naive Bayes": MultinomialNB(),
         "Logistic Regression": LogisticRegression(max_iter=1000),
-        "Decision Tree": DecisionTreeClassifier(max_depth=10), # Limit depth to avoid 100% confidence on all leaves
+        "Decision Tree": DecisionTreeClassifier(max_depth=10, min_samples_leaf=5, random_state=42), # Constrain tree to prevent 100% confidence
         "Random Forest": RandomForestClassifier(n_estimators=100, max_depth=15, random_state=42), # Ensemble for better probabilities
         "SVM": SVC(kernel='linear', probability=True)
     }
