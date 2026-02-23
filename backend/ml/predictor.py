@@ -1,9 +1,4 @@
-import joblib
 import os
-import numpy as np
-import pandas as pd
-from fuzzywuzzy import process
-from deep_translator import GoogleTranslator
 
 class DiseasePredictor:
     def __init__(self):
@@ -22,6 +17,8 @@ class DiseasePredictor:
             self.load_artifacts()
 
     def load_artifacts(self):
+        import joblib
+        import pandas as pd
         self._loaded = True
         if not os.path.exists(self.model_path):
             raise FileNotFoundError(f"Model file not found at {self.model_path}")
@@ -46,6 +43,8 @@ class DiseasePredictor:
             self.symptom_aliases = None
 
     def check_symptom(self, user_input, lang='en'):
+        from fuzzywuzzy import process
+        from deep_translator import GoogleTranslator
         self._ensure_loaded()
         if not user_input or self.all_symptoms is None:
             return None, 0
