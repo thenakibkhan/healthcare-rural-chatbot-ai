@@ -90,8 +90,9 @@ def download_report():
     return response
 @api_bp.route('/symptoms', methods=['GET'])
 def get_symptoms():
-    if predictor.all_symptoms:
-        return jsonify({'symptoms': predictor.all_symptoms, 'success': True})
+    predictor._ensure_loaded()
+    if predictor.all_symptoms is not None:
+        return jsonify({'symptoms': list(predictor.all_symptoms), 'success': True})
     return jsonify({'symptoms': [], 'success': False})
 
 @api_bp.route('/chat/diagnoses', methods=['GET'])
