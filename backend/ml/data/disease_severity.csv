@@ -29,3 +29,72 @@ rubella,low
 tonsillitis,medium
 tuberculosis,high
 whooping cough,high
+diabetes type 1,high
+diabetes type 2,medium
+hyperthyroidism,medium
+hypothyroidism,medium
+osteoarthritis,medium
+rheumatoid arthritis,high
+gout,high
+osteoporosis,high
+eczema,low
+psoriasis,medium
+acne,low
+rosacea,low
+ringworm,medium
+scabies,high
+cataract,medium
+glaucoma,high
+macular degeneration,high
+otitis media,medium
+tinnitus,low
+menieres disease,high
+appendicitis,high
+gallstones,high
+kidney stones,high
+chronic kidney disease,high
+hemorrhoids,medium
+crohns disease,high
+ulcerative colitis,high
+irritable bowel syndrome,medium
+gerd,medium
+celiac disease,high
+hepatitis a,high
+hepatitis b,high
+cirrhosis,high
+pancreatitis,high
+cholera,high
+leprosy,high
+tetanus,high
+polio,high
+diphtheria,high
+rabies,high
+yellow fever,high
+zika virus,medium
+chikungunya,medium
+leptospirosis,medium
+lyme disease,medium
+anthrax,high
+meningitis,high
+encephalitis,high
+septicemia,high
+syphilis,medium
+gonorrhea,medium
+chlamydia,medium
+hiv/aids,high
+schistosomiasis,medium
+filariasis,medium
+ascariasis,low
+hookworm infection,medium
+tapeworm infection,medium
+covid-19,high
+black fungus,high
+scurvy,low
+goiter,medium
+rickets,medium
+obesity,high
+anorexia,high
+heat stroke,high
+frostbite,medium
+insomnia,medium
+stress,low

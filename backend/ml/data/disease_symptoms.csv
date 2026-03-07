@@ -104,3 +104,281 @@ tuberculosis,weight loss
 whooping cough,severe cough
 whooping cough,runaway cough
 whooping cough,fatigue
+diabetes type 1,increased thirst
+diabetes type 1,frequent urination
+diabetes type 1,extreme hunger
+diabetes type 1,unintended weight loss
+diabetes type 2,increased thirst
+diabetes type 2,frequent urination
+diabetes type 2,fatigue
+diabetes type 2,blurred vision
+hyperthyroidism,unintentional weight loss
+hyperthyroidism,rapid heartbeat
+hyperthyroidism,nervousness
+hyperthyroidism,sweating
+hypothyroidism,fatigue
+hypothyroidism,weight gain
+hypothyroidism,cold intolerance
+hypothyroidism,dry skin
+osteoarthritis,joint pain
+osteoarthritis,joint stiffness
+osteoarthritis,loss of flexibility
+osteoarthritis,bone spurs
+rheumatoid arthritis,tender joints
+rheumatoid arthritis,swollen joints
+rheumatoid arthritis,morning stiffness
+rheumatoid arthritis,fatigue
+gout,intense joint pain
+gout,lingering discomfort
+gout,inflammation
+gout,redness
+osteoporosis,back pain
+osteoporosis,loss of height
+osteoporosis,stooped posture
+osteoporosis,bone fractures
+eczema,dry skin
+eczema,itchy skin
+eczema,red patches
+eczema,crusted skin
+psoriasis,red patches
+psoriasis,silvery scales
+psoriasis,dry cracked skin
+psoriasis,itching
+acne,whiteheads
+acne,blackheads
+acne,pimples
+acne,cystic lesions
+rosacea,facial redness
+rosacea,swollen bumps
+rosacea,eye problems
+rosacea,enlarged nose
+ringworm,ring shaped rash
+ringworm,itchy skin
+ringworm,red scaly patches
+ringworm,hair loss
+scabies,severe itching
+scabies,thin burrows
+scabies,pimples
+scabies,rash
+cataract,clouded vision
+cataract,difficulty seeing at night
+cataract,sensitivity to light
+cataract,fading colors
+glaucoma,patchy blind spots
+glaucoma,tunnel vision
+glaucoma,severe headache
+glaucoma,eye pain
+macular degeneration,visual distortions
+macular degeneration,reduced central vision
+macular degeneration,need for brighter light
+macular degeneration,blurriness
+otitis media,ear pain
+otitis media,tugging at ear
+otitis media,difficulty sleeping
+otitis media,fever
+tinnitus,ringing in ears
+tinnitus,buzzing
+tinnitus,roaring
+tinnitus,clicking
+menieres disease,vertigo
+menieres disease,hearing loss
+menieres disease,tinnitus
+menieres disease,ear fullness
+appendicitis,sudden right abdominal pain
+appendicitis,nausea
+appendicitis,vomiting
+appendicitis,fever
+gallstones,sudden upper right abdominal pain
+gallstones,back pain
+gallstones,nausea
+gallstones,vomiting
+kidney stones,severe side pain
+kidney stones,painful urination
+kidney stones,pink or red urine
+kidney stones,nausea
+chronic kidney disease,nausea
+chronic kidney disease,vomiting
+chronic kidney disease,loss of appetite
+chronic kidney disease,swelling in ankles
+hemorrhoids,itching around anus
+hemorrhoids,swelling
+hemorrhoids,bleeding during bowel movements
+hemorrhoids,pain
+crohns disease,diarrhea
+crohns disease,abdominal pain
+crohns disease,fatigue
+crohns disease,weight loss
+ulcerative colitis,diarrhea with blood
+ulcerative colitis,abdominal pain
+ulcerative colitis,rectal pain
+ulcerative colitis,weight loss
+irritable bowel syndrome,abdominal pain
+irritable bowel syndrome,bloating
+irritable bowel syndrome,gas
+irritable bowel syndrome,diarrhea or constipation
+gerd,heartburn
+gerd,chest pain
+gerd,difficulty swallowing
+gerd,regurgitation of food
+celiac disease,diarrhea
+celiac disease,fatigue
+celiac disease,weight loss
+celiac disease,bloating
+celiac disease,anemia
+hepatitis a,fatigue
+hepatitis a,nausea
+hepatitis a,abdominal pain
+hepatitis a,dark urine
+hepatitis a,jaundice
+hepatitis b,abdominal pain
+hepatitis b,dark urine
+hepatitis b,joint pain
+hepatitis b,loss of appetite
+cirrhosis,fatigue
+cirrhosis,easily bleeding
+cirrhosis,loss of appetite
+cirrhosis,yellow skin
+pancreatitis,upper abdominal pain
+pancreatitis,pain radiating to back
+pancreatitis,fever
+pancreatitis,rapid pulse
+cholera,severe diarrhea
+cholera,vomiting
+cholera,leg cramps
+cholera,dehydration
+leprosy,light colored skin patches
+leprosy,reduced sensation
+leprosy,muscle weakness
+tetanus,muscle spasms
+tetanus,lockjaw
+tetanus,muscle stiffness
+tetanus,fever
+polio,fatigue
+polio,fever
+polio,muscle weakness
+polio,paralysis
+diphtheria,thick grey coating in throat
+diphtheria,sore throat
+diphtheria,swollen glands
+rabies,fever
+rabies,fear of water
+rabies,confusion
+rabies,agitation
+yellow fever,fever
+yellow fever,chills
+yellow fever,loss of appetite
+yellow fever,yellow eyes
+zika virus,mild fever
+zika virus,rash
+zika virus,joint pain
+zika virus,red eyes
+chikungunya,sudden onset of fever
+chikungunya,severe joint pain
+chikungunya,muscle pain
+chikungunya,headache
+leptospirosis,high fever
+leptospirosis,headache
+leptospirosis,muscle aches
+leptospirosis,red eyes
+lyme disease,target-shaped rash
+lyme disease,fever
+lyme disease,chills
+lyme disease,fatigue
+anthrax,skin ulcer with dark scab
+anthrax,fever
+anthrax,shortness of breath
+anthrax,nausea
+meningitis,stiff neck
+meningitis,sudden high fever
+meningitis,severe headache
+meningitis,confusion
+encephalitis,headache
+encephalitis,fever
+encephalitis,muscle and joint aches
+encephalitis,fatigue or weakness
+septicemia,chills
+septicemia,fever
+septicemia,very fast breathing
+septicemia,rapid heart rate
+syphilis,small painless sore
+syphilis,rash
+syphilis,fever
+syphilis,swollen lymph nodes
+gonorrhea,painful urination
+gonorrhea,increased discharge
+gonorrhea,pelvic pain
+chlamydia,painful urination
+chlamydia,low abdominal pain
+chlamydia,vaginal discharge or penile discharge
+hiv/aids,fever
+hiv/aids,chills
+hiv/aids,rash
+hiv/aids,night sweats
+hiv/aids,muscle aches
+hiv/aids,sore throat
+schistosomiasis,rash or itchy skin
+schistosomiasis,fever
+schistosomiasis,chills
+schistosomiasis,blood in urine
+filariasis,swollen limbs
+filariasis,fever
+filariasis,skin exfoliation
+filariasis,thickened skin
+ascariasis,abdominal discomfort
+ascariasis,vomiting
+ascariasis,fever
+ascariasis,cough
+hookworm infection,itchy rash
+hookworm infection,abdominal pain
+hookworm infection,diarrhea
+hookworm infection,weight loss
+tapeworm infection,nausea
+tapeworm infection,weakness
+tapeworm infection,loss of appetite
+tapeworm infection,abdominal pain
+covid-19,fever
+covid-19,dry cough
+covid-19,tiredness
+covid-19,loss of taste or smell
+black fungus,facial swelling
+black fungus,nasal congestion
+black fungus,black lesions inside mouth
+black fungus,fever
+scurvy,bleeding gums
+scurvy,weakness
+scurvy,skin rashes
+scurvy,fatigue
+goiter,swelling at base of neck
+goiter,tight feeling in throat
+goiter,hoarseness
+goiter,coughing
+rickets,delayed growth
+rickets,pain in spine
+rickets,muscle weakness
+rickets,bowed legs
+obesity,excess body fat
+obesity,breathlessness
+obesity,increased sweating
+obesity,snoring
+anorexia,extreme weight loss
+anorexia,thin appearance
+anorexia,fatigue
+anorexia,insomnia
+heat stroke,high body temperature
+heat stroke,altered mental state
+heat stroke,nausea
+heat stroke,flushed skin
+heat stroke,rapid breathing
+frostbite,cold skin
+frostbite,prickling feeling
+frostbite,numbness
+frostbite,red or white skin
+insomnia,difficulty falling asleep
+insomnia,waking up during night
+insomnia,not feeling well-rested
+insomnia,tiredness
+stress,headache
+stress,muscle tension
+stress,fatigue
+stress,change in sex drive
+stress,stomach upset
