@@ -90,10 +90,19 @@ def download_report():
     return response
 @api_bp.route('/symptoms', methods=['GET'])
 def get_symptoms():
-    predictor._ensure_loaded()
-    if predictor.all_symptoms is not None:
-        return jsonify({'symptoms': list(predictor.all_symptoms), 'success': True})
-    return jsonify({'symptoms': [], 'success': False})
+    import csv, os
+    try:
+        # Fast load bypassing 8MB ML model so Render Free Tier doesn't crash on initial page load
+        symptoms_file = os.path.join(os.path.dirname(__file__), '..', 'ml', 'data', 'disease_symptoms.csv')
+        symptoms = set()
+        with open(symptoms_file, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                s = row.get('symptom')
+                if s: symptoms.add(s.strip())
+        return jsonify({'symptoms': sorted(list(symptoms)), 'success': True})
+    except Exception as e:
+        return jsonify({'symptoms': [], 'success': False, 'error': str(e)})
 
 @api_bp.route('/chat/diagnoses', methods=['GET'])
 @login_required

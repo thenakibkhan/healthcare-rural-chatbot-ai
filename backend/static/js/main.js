@@ -117,6 +117,49 @@ const api = {
             return;
         }
 
+        const msgLow = message.toLowerCase().trim();
+        
+        // --- CONVERSATIONAL NLP CHECKS ---
+        const greetings = ['hi', 'hello', 'hey', 'greetings', 'namaste', 'hii', 'heyy'];
+        if (greetings.includes(msgLow) || msgLow.startsWith('hi ') || msgLow.startsWith('hello ')) {
+            const greetingReply = state.lang === 'hi' ? "नमस्ते! मैं आपकी कैसे मदद कर सकता हूँ? कृपया अपने लक्षण बताएं।" : 
+                                 (state.lang === 'ta' ? "வணக்கம்! நான் உங்களுக்கு எப்படி உதவ முடியும்? உங்கள் அறிகுறிகளைக் கூறுங்கள்." : 
+                                 "Hello there! I'm your AI health assistant. What symptoms are you experiencing today?");
+            frontend.addMessage(greetingReply, 'bot');
+            await this.saveMessage('bot', greetingReply);
+            return;
+        }
+
+        if (msgLow.includes('how are you')) {
+            const howReply = state.lang === 'hi' ? "मैं बिल्कुल ठीक हूँ, धन्यवाद! कृपया अपने लक्षण बताएं।" : 
+                            (state.lang === 'ta' ? "நான் நன்றாக இருக்கிறேன், நன்றி! உங்கள் அறிகுறிகளைக் கூறுங்கள்." :
+                            "I'm functioning perfectly, thank you! I am ready to help diagnose. Please tell me your symptoms.");
+            frontend.addMessage(howReply, 'bot');
+            await this.saveMessage('bot', howReply);
+            return;
+        }
+
+        if (msgLow.includes('feel bad') || msgLow.includes('feeling sick') || msgLow.includes('not well') || msgLow === 'sick' || msgLow === 'ill') {
+            const sickReply = state.lang === 'hi' ? "यह सुनकर खेद है। बेहतर मदद करने के लिए, क्या आप बुखार या सिरदर्द जैसे विशिष्ट लक्षण बता सकते हैं?" : 
+                             (state.lang === 'ta' ? "வருத்தமாக உள்ளது. காய்ச்சல் அல்லது தலைவலி போன்ற குறிப்பிட்ட அறிகுறிகளை கூற முடியுமா?" :
+                             "I'm very sorry to hear that you are not feeling well. To help you better, could you name specific symptoms like fever, headache, or nausea?");
+            frontend.addMessage(sickReply, 'bot');
+            await this.saveMessage('bot', sickReply);
+            return;
+        }
+        
+        const goodbyes = ['bye', 'goodbye', 'thanks', 'thank you', 'ok', 'okay', 'cya', 'thankyou', 'thx', 'shukriya', 'dhanyawad', 'nandri'];
+        if (goodbyes.includes(msgLow) || msgLow.startsWith('thank') || msgLow.startsWith('bye')) {
+             const goodbyeReply = state.lang === 'hi' ? "आपका स्वागत है! यदि कोई और लक्षण हो, तो बेझिझक पूछें। अपना ख्याल रखें!" :
+                                  (state.lang === 'ta' ? "நல்வரவு! வேறு ஏதேனும் அறிகுறிகள் இருந்தால் கேளுங்கள். கவனிச்சுக்கோங்க!" :
+                                  "You're very welcome! If you experience any other symptoms, feel free to let me know. Take care!");
+             frontend.addMessage(goodbyeReply, 'bot');
+             await this.saveMessage('bot', goodbyeReply);
+             return;
+        }
+        // --- END CONVERSATIONAL CHECKS ---
+
+
         // 2. Validate Symptom
         const loadingId = frontend.showLoading();
 
